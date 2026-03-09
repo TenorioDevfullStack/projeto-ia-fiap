@@ -82,7 +82,7 @@ if(status_code(resposta) == 200) {
   cat(sprintf("-> Velocidade do vento: %.1f km/h\n", atual$windspeed))
   
   # Lógica de decisão para auxílio no manejo
-  cat("\nANÁLISE PARA MANEJO (IR ALÉM):\n")
+  cat("\nANÁLISE PARA MANEJO:\n")
   if (atual$windspeed > 12) {
     cat("- [AVISO] Vento acima de 12km/h detectado. Risco de deriva na pulverização.\n")
   } else {
